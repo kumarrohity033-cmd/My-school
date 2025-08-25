@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Reports</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance Reports</h1>
+        <div class="report-controls">
+            <label for="reportDate">Select Date:</label>
+            <input type="date" id="reportDate">
+            <button id="generateReportBtn">Generate Report</button>
+        </div>
+        <div class="report-view">
+            <div class="chart-container" style="position: relative; height:40vh; width:80vw">
+                <canvas id="attendanceChart"></canvas>
+            </div>
+            <button id="downloadCsvBtn">Download Report (CSV)</button>
+        </div>
+        <a href="index.html"><button>Back to Home</button></a>
+    </div>
+    <script src="reports.js"></script>
+</body>
+</html>

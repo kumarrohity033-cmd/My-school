@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance App</h1>
+
+        <div class="main-content">
+            <!-- Student Management -->
+            <div class="students-section">
+                <h2>Manage Students</h2>
+                <div class="add-student-form">
+                    <input type="text" id="studentName" placeholder="Student Name" required>
+                    <input type="number" id="rollNumber" placeholder="Roll Number" required>
+                    <button id="addStudentBtn">Add Student</button>
+                </div>
+                <div class="student-list-container">
+                    <h3>Student List</h3>
+                    <table id="studentList">
+                        <thead>
+                            <tr>
+                                <th>Roll No.</th>
+                                <th>Name</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Student rows will be inserted here -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Attendance Marking -->
+            <div class="attendance-section">
+                <h2>Mark Attendance</h2>
+                <div class="attendance-controls">
+                    <label for="attendanceDate">Date:</label>
+                    <input type="date" id="attendanceDate">
+                </div>
+                <div class="attendance-list-container">
+                    <table id="attendanceList">
+                        <thead>
+                            <tr>
+                                <th>Roll No.</th>
+                                <th>Name</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Attendance rows will be inserted here -->
+                        </tbody>
+                    </table>
+                    <button id="saveAttendanceBtn">Save Attendance</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reports -->
+        <div class="reports-section">
+            <h2>Reports</h2>
+            <a href="reports.html"><button>View Reports</button></a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
